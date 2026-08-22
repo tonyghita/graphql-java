@@ -1,8 +1,6 @@
 package graphql.execution.instrumentation
 
-import graphql.ExecutionResult
 import graphql.GraphQL
-import graphql.execution.instrumentation.parameters.InstrumentationExecutionParameters
 import graphql.execution.instrumentation.parameters.InstrumentationFieldFetchParameters
 import graphql.schema.idl.RuntimeWiring
 import graphql.schema.idl.SchemaGenerator
@@ -145,28 +143,10 @@ class InstrumentationDefaultMethodsTest extends Specification {
         ]
     }
 
-    def "simple performant instrumentation createState is null by default and begin hooks accept null state"() {
-        when:
-        def created = SimplePerformantInstrumentation.INSTANCE.createState(null)
-        def beginCtx = SimplePerformantInstrumentation.INSTANCE.beginExecution(null, null)
-
-        then:
-        created == null
-        beginCtx != null
-        // null state must not throw (optional-state contract; Kotlin sees @Nullable after #4433)
-        noExceptionThrown()
-    }
-
-    def "stateless SimplePerformantInstrumentation subclass executes with null state"() {
+    def "stateless Kotlin instrumentation executes with null state"() {
         given:
-        def seenStates = []
-        def instrumentation = new SimplePerformantInstrumentation() {
-            @Override
-            InstrumentationContext<ExecutionResult> beginExecution(InstrumentationExecutionParameters parameters, InstrumentationState state) {
-                seenStates << state
-                return SimpleInstrumentationContext.noOp()
-            }
-        }
+        def fixtureClass = Class.forName("graphql.execution.instrumentation.KotlinStatelessInstrumentation")
+        def instrumentation = fixtureClass.getDeclaredConstructor().newInstance() as Instrumentation
         def typeRegistry = new SchemaParser().parse("""
             type Query {
               hello: String
@@ -180,7 +160,24 @@ class InstrumentationDefaultMethodsTest extends Specification {
 
         then:
         result.errors.isEmpty()
-        seenStates == [null]
+        fixtureClass.getMethod("getSeenStates").invoke(instrumentation) == [null]
+    }
+
+    def "Kotlin chained instrumentation receives nullable child state"() {
+        given:
+        def fixtureClass = Class.forName("graphql.execution.instrumentation.KotlinChainedInstrumentation")
+        def instrumentation = fixtureClass
+                .getDeclaredConstructor(Instrumentation)
+                .newInstance(SimplePerformantInstrumentation.INSTANCE) as ChainedInstrumentation
+        def state = instrumentation.createStateAsync(null).join()
+
+        when:
+        def childState = fixtureClass
+                .getMethod("consumeChildState", InstrumentationState)
+                .invoke(instrumentation, state)
+
+        then:
+        childState == null
     }
 
     private static Instrumentation instrumentationReturning(FieldFetchingInstrumentationContext context) {
