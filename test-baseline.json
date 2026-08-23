@@ -1,29 +1,29 @@
 {
   "tests": {
     "java11": {
-      "total": 5938,
-      "passed": 5882,
+      "total": 5940,
+      "passed": 5884,
       "failed": 0,
       "errors": 0,
       "skipped": 56
     },
     "java17": {
-      "total": 5938,
-      "passed": 5881,
+      "total": 5940,
+      "passed": 5883,
       "failed": 0,
       "errors": 0,
       "skipped": 57
     },
     "java21": {
-      "total": 5938,
-      "passed": 5881,
+      "total": 5940,
+      "passed": 5883,
       "failed": 0,
       "errors": 0,
       "skipped": 57
     },
     "java25": {
-      "total": 5938,
-      "passed": 5881,
+      "total": 5940,
+      "passed": 5883,
       "failed": 0,
       "errors": 0,
       "skipped": 57
@@ -43,11 +43,11 @@
         "missed": 1518
       },
       "line": {
-        "covered": 30071,
+        "covered": 30072,
         "missed": 3121
       },
       "method": {
-        "covered": 8032,
+        "covered": 8033,
         "missed": 1206
       }
     },
@@ -90314,7 +90314,7 @@
           {
             "name": "&lt;init&gt;",
             "desc": "(Ljava/util/List;)V",
-            "line": 421,
+            "line": 430,
             "counters": {
               "line": {
                 "covered": 0,
@@ -90333,7 +90333,7 @@
           {
             "name": "onDispatched",
             "desc": "()V",
-            "line": 427,
+            "line": 436,
             "counters": {
               "line": {
                 "covered": 0,
@@ -90352,7 +90352,7 @@
           {
             "name": "onCompleted",
             "desc": "(Ljava/lang/Object;Ljava/lang/Throwable;)V",
-            "line": 432,
+            "line": 441,
             "counters": {
               "line": {
                 "covered": 0,
@@ -90371,7 +90371,7 @@
           {
             "name": "lambda$onCompleted$0",
             "desc": "(Ljava/lang/Object;Ljava/lang/Throwable;Lgraphql/execution/instrumentation/InstrumentationContext;)V",
-            "line": 432,
+            "line": 441,
             "counters": {
               "line": {
                 "covered": 0,
@@ -91126,7 +91126,7 @@
           {
             "name": "&lt;init&gt;",
             "desc": "(Ljava/util/List;)V",
-            "line": 291,
+            "line": 300,
             "counters": {
               "line": {
                 "covered": 3,
@@ -91145,7 +91145,7 @@
           {
             "name": "getState",
             "desc": "(I)Lgraphql/execution/instrumentation/InstrumentationState;",
-            "line": 296,
+            "line": 305,
             "counters": {
               "line": {
                 "covered": 1,
@@ -91164,7 +91164,7 @@
           {
             "name": "combineAll",
             "desc": "(Ljava/util/List;Lgraphql/execution/instrumentation/parameters/InstrumentationCreateStateParameters;)Ljava/util/concurrent/CompletableFuture;",
-            "line": 300,
+            "line": 309,
             "counters": {
               "line": {
                 "covered": 6,
@@ -91272,7 +91272,7 @@
           {
             "name": "beginExecution",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationExecutionParameters;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/InstrumentationContext;",
-            "line": 82,
+            "line": 83,
             "counters": {
               "line": {
                 "covered": 1,
@@ -91291,7 +91291,7 @@
           {
             "name": "beginParse",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationExecutionParameters;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/InstrumentationContext;",
-            "line": 95,
+            "line": 96,
             "counters": {
               "line": {
                 "covered": 1,
@@ -91310,7 +91310,7 @@
           {
             "name": "beginValidation",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationValidationParameters;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/InstrumentationContext;",
-            "line": 108,
+            "line": 109,
             "counters": {
               "line": {
                 "covered": 1,
@@ -91329,7 +91329,7 @@
           {
             "name": "beginExecuteOperation",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationExecuteOperationParameters;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/InstrumentationContext;",
-            "line": 121,
+            "line": 122,
             "counters": {
               "line": {
                 "covered": 1,
@@ -91348,7 +91348,7 @@
           {
             "name": "beginReactiveResults",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationReactiveResultsParameters;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/InstrumentationContext;",
-            "line": 136,
+            "line": 137,
             "counters": {
               "line": {
                 "covered": 1,
@@ -91367,7 +91367,7 @@
           {
             "name": "beginExecutionStrategy",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationExecutionStrategyParameters;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/ExecutionStrategyInstrumentationContext;",
-            "line": 150,
+            "line": 151,
             "counters": {
               "line": {
                 "covered": 1,
@@ -91386,7 +91386,7 @@
           {
             "name": "beginExecuteObject",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationExecutionStrategyParameters;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/ExecuteObjectInstrumentationContext;",
-            "line": 164,
+            "line": 165,
             "counters": {
               "line": {
                 "covered": 1,
@@ -91405,7 +91405,7 @@
           {
             "name": "beginDeferredField",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationFieldParameters;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/InstrumentationContext;",
-            "line": 180,
+            "line": 181,
             "counters": {
               "line": {
                 "covered": 1,
@@ -91424,7 +91424,7 @@
           {
             "name": "beginSubscribedFieldEvent",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationFieldParameters;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/InstrumentationContext;",
-            "line": 193,
+            "line": 194,
             "counters": {
               "line": {
                 "covered": 0,
@@ -91443,7 +91443,7 @@
           {
             "name": "beginFieldExecution",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationFieldParameters;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/InstrumentationContext;",
-            "line": 206,
+            "line": 207,
             "counters": {
               "line": {
                 "covered": 1,
@@ -91462,7 +91462,7 @@
           {
             "name": "beginFieldFetch",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationFieldFetchParameters;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/InstrumentationContext;",
-            "line": 223,
+            "line": 224,
             "counters": {
               "line": {
                 "covered": 1,
@@ -91481,7 +91481,7 @@
           {
             "name": "beginFieldFetching",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationFieldFetchParameters;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/FieldFetchingInstrumentationContext;",
-            "line": 243,
+            "line": 244,
             "counters": {
               "line": {
                 "covered": 4,
@@ -91500,7 +91500,7 @@
           {
             "name": "beginFieldCompletion",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationFieldCompleteParameters;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/InstrumentationContext;",
-            "line": 260,
+            "line": 261,
             "counters": {
               "line": {
                 "covered": 1,
@@ -91519,7 +91519,7 @@
           {
             "name": "beginFieldListCompletion",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationFieldCompleteParameters;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/InstrumentationContext;",
-            "line": 273,
+            "line": 274,
             "counters": {
               "line": {
                 "covered": 0,
@@ -91538,7 +91538,7 @@
           {
             "name": "instrumentExecutionInput",
             "desc": "(Lgraphql/ExecutionInput;Lgraphql/execution/instrumentation/parameters/InstrumentationExecutionParameters;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/ExecutionInput;",
-            "line": 288,
+            "line": 289,
             "counters": {
               "line": {
                 "covered": 1,
@@ -91557,7 +91557,7 @@
           {
             "name": "instrumentDocumentAndVariables",
             "desc": "(Lgraphql/execution/instrumentation/DocumentAndVariables;Lgraphql/execution/instrumentation/parameters/InstrumentationExecutionParameters;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/DocumentAndVariables;",
-            "line": 302,
+            "line": 303,
             "counters": {
               "line": {
                 "covered": 1,
@@ -91576,7 +91576,7 @@
           {
             "name": "instrumentSchema",
             "desc": "(Lgraphql/schema/GraphQLSchema;Lgraphql/execution/instrumentation/parameters/InstrumentationExecutionParameters;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/schema/GraphQLSchema;",
-            "line": 317,
+            "line": 318,
             "counters": {
               "line": {
                 "covered": 1,
@@ -91595,7 +91595,7 @@
           {
             "name": "instrumentExecutionContext",
             "desc": "(Lgraphql/execution/ExecutionContext;Lgraphql/execution/instrumentation/parameters/InstrumentationExecutionParameters;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/ExecutionContext;",
-            "line": 332,
+            "line": 333,
             "counters": {
               "line": {
                 "covered": 1,
@@ -91614,7 +91614,7 @@
           {
             "name": "instrumentDataFetcher",
             "desc": "(Lgraphql/schema/DataFetcher;Lgraphql/execution/instrumentation/parameters/InstrumentationFieldFetchParameters;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/schema/DataFetcher;",
-            "line": 349,
+            "line": 350,
             "counters": {
               "line": {
                 "covered": 1,
@@ -91633,7 +91633,7 @@
           {
             "name": "instrumentExecutionResult",
             "desc": "(Lgraphql/ExecutionResult;Lgraphql/execution/instrumentation/parameters/InstrumentationExecutionParameters;Lgraphql/execution/instrumentation/InstrumentationState;)Ljava/util/concurrent/CompletableFuture;",
-            "line": 363,
+            "line": 364,
             "counters": {
               "line": {
                 "covered": 1,
@@ -92417,7 +92417,7 @@
       },
       "graphql.execution.instrumentation.ChainedInstrumentation": {
         "line": {
-          "covered": 96,
+          "covered": 97,
           "missed": 4
         },
         "branch": {
@@ -92425,7 +92425,7 @@
           "missed": 0
         },
         "method": {
-          "covered": 41,
+          "covered": 42,
           "missed": 8
         },
         "methods": [
@@ -92487,9 +92487,28 @@
             }
           },
           {
+            "name": "asChainedState",
+            "desc": "(Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/ChainedInstrumentation$ChainedInstrumentationState;",
+            "line": 76,
+            "counters": {
+              "line": {
+                "covered": 1,
+                "missed": 0
+              },
+              "branch": {
+                "covered": 0,
+                "missed": 0
+              },
+              "method": {
+                "covered": 1,
+                "missed": 0
+              }
+            }
+          },
+          {
             "name": "chainedCtx",
             "desc": "(Lgraphql/execution/instrumentation/InstrumentationState;Ljava/util/function/BiFunction;)Lgraphql/execution/instrumentation/InstrumentationContext;",
-            "line": 73,
+            "line": 82,
             "counters": {
               "line": {
                 "covered": 6,
@@ -92508,7 +92527,7 @@
           {
             "name": "chainedInstrument",
             "desc": "(Lgraphql/execution/instrumentation/InstrumentationState;Ljava/lang/Object;Lgraphql/execution/instrumentation/ChainedInstrumentation$ChainedInstrumentationFunction;)Ljava/lang/Object;",
-            "line": 84,
+            "line": 93,
             "counters": {
               "line": {
                 "covered": 6,
@@ -92527,7 +92546,7 @@
           {
             "name": "chainedMapAndDropNulls",
             "desc": "(Lgraphql/execution/instrumentation/InstrumentationState;Ljava/util/function/BiFunction;)Lcom/google/common/collect/ImmutableList;",
-            "line": 94,
+            "line": 103,
             "counters": {
               "line": {
                 "covered": 9,
@@ -92546,7 +92565,7 @@
           {
             "name": "chainedConsume",
             "desc": "(Lgraphql/execution/instrumentation/InstrumentationState;Ljava/util/function/BiConsumer;)V",
-            "line": 108,
+            "line": 117,
             "counters": {
               "line": {
                 "covered": 6,
@@ -92565,7 +92584,7 @@
           {
             "name": "createStateAsync",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationCreateStateParameters;)Ljava/util/concurrent/CompletableFuture;",
-            "line": 118,
+            "line": 127,
             "counters": {
               "line": {
                 "covered": 1,
@@ -92584,7 +92603,7 @@
           {
             "name": "beginExecution",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationExecutionParameters;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/InstrumentationContext;",
-            "line": 123,
+            "line": 132,
             "counters": {
               "line": {
                 "covered": 1,
@@ -92603,7 +92622,7 @@
           {
             "name": "beginParse",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationExecutionParameters;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/InstrumentationContext;",
-            "line": 129,
+            "line": 138,
             "counters": {
               "line": {
                 "covered": 1,
@@ -92622,7 +92641,7 @@
           {
             "name": "beginValidation",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationValidationParameters;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/InstrumentationContext;",
-            "line": 135,
+            "line": 144,
             "counters": {
               "line": {
                 "covered": 1,
@@ -92641,7 +92660,7 @@
           {
             "name": "beginExecuteOperation",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationExecuteOperationParameters;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/InstrumentationContext;",
-            "line": 140,
+            "line": 149,
             "counters": {
               "line": {
                 "covered": 1,
@@ -92660,7 +92679,7 @@
           {
             "name": "beginReactiveResults",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationReactiveResultsParameters;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/InstrumentationContext;",
-            "line": 145,
+            "line": 154,
             "counters": {
               "line": {
                 "covered": 0,
@@ -92679,7 +92698,7 @@
           {
             "name": "beginExecutionStrategy",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationExecutionStrategyParameters;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/ExecutionStrategyInstrumentationContext;",
-            "line": 150,
+            "line": 159,
             "counters": {
               "line": {
                 "covered": 7,
@@ -92698,7 +92717,7 @@
           {
             "name": "beginExecuteObject",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationExecutionStrategyParameters;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/ExecuteObjectInstrumentationContext;",
-            "line": 163,
+            "line": 172,
             "counters": {
               "line": {
                 "covered": 7,
@@ -92717,7 +92736,7 @@
           {
             "name": "beginDeferredField",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationFieldParameters;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/InstrumentationContext;",
-            "line": 177,
+            "line": 186,
             "counters": {
               "line": {
                 "covered": 0,
@@ -92736,7 +92755,7 @@
           {
             "name": "beginSubscribedFieldEvent",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationFieldParameters;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/InstrumentationContext;",
-            "line": 182,
+            "line": 191,
             "counters": {
               "line": {
                 "covered": 0,
@@ -92755,7 +92774,7 @@
           {
             "name": "beginFieldExecution",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationFieldParameters;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/InstrumentationContext;",
-            "line": 187,
+            "line": 196,
             "counters": {
               "line": {
                 "covered": 1,
@@ -92774,7 +92793,7 @@
           {
             "name": "beginFieldFetch",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationFieldFetchParameters;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/InstrumentationContext;",
-            "line": 193,
+            "line": 202,
             "counters": {
               "line": {
                 "covered": 0,
@@ -92793,7 +92812,7 @@
           {
             "name": "beginFieldFetching",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationFieldFetchParameters;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/FieldFetchingInstrumentationContext;",
-            "line": 198,
+            "line": 207,
             "counters": {
               "line": {
                 "covered": 6,
@@ -92812,7 +92831,7 @@
           {
             "name": "chainedFieldFetchingCtx",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationFieldFetchParameters;Lgraphql/execution/instrumentation/ChainedInstrumentation$ChainedInstrumentationState;)Lgraphql/execution/instrumentation/FieldFetchingInstrumentationContext;",
-            "line": 209,
+            "line": 218,
             "counters": {
               "line": {
                 "covered": 19,
@@ -92831,7 +92850,7 @@
           {
             "name": "beginFieldCompletion",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationFieldCompleteParameters;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/InstrumentationContext;",
-            "line": 238,
+            "line": 247,
             "counters": {
               "line": {
                 "covered": 1,
@@ -92850,7 +92869,7 @@
           {
             "name": "beginFieldListCompletion",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationFieldCompleteParameters;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/InstrumentationContext;",
-            "line": 244,
+            "line": 253,
             "counters": {
               "line": {
                 "covered": 1,
@@ -92869,7 +92888,7 @@
           {
             "name": "instrumentExecutionInput",
             "desc": "(Lgraphql/ExecutionInput;Lgraphql/execution/instrumentation/parameters/InstrumentationExecutionParameters;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/ExecutionInput;",
-            "line": 249,
+            "line": 258,
             "counters": {
               "line": {
                 "covered": 1,
@@ -92888,7 +92907,7 @@
           {
             "name": "instrumentDocumentAndVariables",
             "desc": "(Lgraphql/execution/instrumentation/DocumentAndVariables;Lgraphql/execution/instrumentation/parameters/InstrumentationExecutionParameters;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/DocumentAndVariables;",
-            "line": 254,
+            "line": 263,
             "counters": {
               "line": {
                 "covered": 1,
@@ -92907,7 +92926,7 @@
           {
             "name": "instrumentSchema",
             "desc": "(Lgraphql/schema/GraphQLSchema;Lgraphql/execution/instrumentation/parameters/InstrumentationExecutionParameters;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/schema/GraphQLSchema;",
-            "line": 260,
+            "line": 269,
             "counters": {
               "line": {
                 "covered": 1,
@@ -92926,7 +92945,7 @@
           {
             "name": "instrumentExecutionContext",
             "desc": "(Lgraphql/execution/ExecutionContext;Lgraphql/execution/instrumentation/parameters/InstrumentationExecutionParameters;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/ExecutionContext;",
-            "line": 266,
+            "line": 275,
             "counters": {
               "line": {
                 "covered": 1,
@@ -92945,7 +92964,7 @@
           {
             "name": "instrumentDataFetcher",
             "desc": "(Lgraphql/schema/DataFetcher;Lgraphql/execution/instrumentation/parameters/InstrumentationFieldFetchParameters;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/schema/DataFetcher;",
-            "line": 272,
+            "line": 281,
             "counters": {
               "line": {
                 "covered": 1,
@@ -92964,7 +92983,7 @@
           {
             "name": "instrumentExecutionResult",
             "desc": "(Lgraphql/ExecutionResult;Lgraphql/execution/instrumentation/parameters/InstrumentationExecutionParameters;Lgraphql/execution/instrumentation/InstrumentationState;)Ljava/util/concurrent/CompletableFuture;",
-            "line": 278,
+            "line": 287,
             "counters": {
               "line": {
                 "covered": 3,
@@ -92983,7 +93002,7 @@
           {
             "name": "lambda$instrumentExecutionResult$1",
             "desc": "(Lgraphql/ExecutionResult;Ljava/util/List;)Lgraphql/ExecutionResult;",
-            "line": 285,
+            "line": 294,
             "counters": {
               "line": {
                 "covered": 1,
@@ -93002,7 +93021,7 @@
           {
             "name": "lambda$instrumentExecutionResult$0",
             "desc": "(Lgraphql/ExecutionResult;Lgraphql/execution/instrumentation/parameters/InstrumentationExecutionParameters;Ljava/util/Map$Entry;Ljava/util/List;)Ljava/lang/Object;",
-            "line": 280,
+            "line": 289,
             "counters": {
               "line": {
                 "covered": 4,
@@ -93021,7 +93040,7 @@
           {
             "name": "lambda$instrumentDataFetcher$0",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationFieldFetchParameters;Lgraphql/execution/instrumentation/Instrumentation;Lgraphql/execution/instrumentation/InstrumentationState;Lgraphql/schema/DataFetcher;)Lgraphql/schema/DataFetcher;",
-            "line": 273,
+            "line": 282,
             "counters": {
               "line": {
                 "covered": 1,
@@ -93040,7 +93059,7 @@
           {
             "name": "lambda$instrumentExecutionContext$0",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationExecutionParameters;Lgraphql/execution/instrumentation/Instrumentation;Lgraphql/execution/instrumentation/InstrumentationState;Lgraphql/execution/ExecutionContext;)Lgraphql/execution/ExecutionContext;",
-            "line": 267,
+            "line": 276,
             "counters": {
               "line": {
                 "covered": 1,
@@ -93059,7 +93078,7 @@
           {
             "name": "lambda$instrumentSchema$0",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationExecutionParameters;Lgraphql/execution/instrumentation/Instrumentation;Lgraphql/execution/instrumentation/InstrumentationState;Lgraphql/schema/GraphQLSchema;)Lgraphql/schema/GraphQLSchema;",
-            "line": 261,
+            "line": 270,
             "counters": {
               "line": {
                 "covered": 1,
@@ -93078,7 +93097,7 @@
           {
             "name": "lambda$instrumentDocumentAndVariables$0",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationExecutionParameters;Lgraphql/execution/instrumentation/Instrumentation;Lgraphql/execution/instrumentation/InstrumentationState;Lgraphql/execution/instrumentation/DocumentAndVariables;)Lgraphql/execution/instrumentation/DocumentAndVariables;",
-            "line": 255,
+            "line": 264,
             "counters": {
               "line": {
                 "covered": 1,
@@ -93097,7 +93116,7 @@
           {
             "name": "lambda$instrumentExecutionInput$0",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationExecutionParameters;Lgraphql/execution/instrumentation/Instrumentation;Lgraphql/execution/instrumentation/InstrumentationState;Lgraphql/ExecutionInput;)Lgraphql/ExecutionInput;",
-            "line": 249,
+            "line": 258,
             "counters": {
               "line": {
                 "covered": 1,
@@ -93116,7 +93135,7 @@
           {
             "name": "lambda$beginFieldListCompletion$0",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationFieldCompleteParameters;Lgraphql/execution/instrumentation/Instrumentation;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/InstrumentationContext;",
-            "line": 244,
+            "line": 253,
             "counters": {
               "line": {
                 "covered": 1,
@@ -93135,7 +93154,7 @@
           {
             "name": "lambda$beginFieldCompletion$0",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationFieldCompleteParameters;Lgraphql/execution/instrumentation/Instrumentation;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/InstrumentationContext;",
-            "line": 238,
+            "line": 247,
             "counters": {
               "line": {
                 "covered": 1,
@@ -93154,7 +93173,7 @@
           {
             "name": "lambda$beginFieldFetch$0",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationFieldFetchParameters;Lgraphql/execution/instrumentation/Instrumentation;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/InstrumentationContext;",
-            "line": 193,
+            "line": 202,
             "counters": {
               "line": {
                 "covered": 0,
@@ -93173,7 +93192,7 @@
           {
             "name": "lambda$beginFieldExecution$0",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationFieldParameters;Lgraphql/execution/instrumentation/Instrumentation;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/InstrumentationContext;",
-            "line": 187,
+            "line": 196,
             "counters": {
               "line": {
                 "covered": 1,
@@ -93192,7 +93211,7 @@
           {
             "name": "lambda$beginSubscribedFieldEvent$0",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationFieldParameters;Lgraphql/execution/instrumentation/Instrumentation;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/InstrumentationContext;",
-            "line": 182,
+            "line": 191,
             "counters": {
               "line": {
                 "covered": 0,
@@ -93211,7 +93230,7 @@
           {
             "name": "lambda$beginDeferredField$0",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationFieldParameters;Lgraphql/execution/instrumentation/Instrumentation;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/InstrumentationContext;",
-            "line": 177,
+            "line": 186,
             "counters": {
               "line": {
                 "covered": 0,
@@ -93230,7 +93249,7 @@
           {
             "name": "lambda$beginExecuteObject$0",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationExecutionStrategyParameters;Lgraphql/execution/instrumentation/Instrumentation;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/ExecuteObjectInstrumentationContext;",
-            "line": 166,
+            "line": 175,
             "counters": {
               "line": {
                 "covered": 1,
@@ -93249,7 +93268,7 @@
           {
             "name": "lambda$beginExecutionStrategy$0",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationExecutionStrategyParameters;Lgraphql/execution/instrumentation/Instrumentation;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/ExecutionStrategyInstrumentationContext;",
-            "line": 153,
+            "line": 162,
             "counters": {
               "line": {
                 "covered": 1,
@@ -93268,7 +93287,7 @@
           {
             "name": "lambda$beginReactiveResults$0",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationReactiveResultsParameters;Lgraphql/execution/instrumentation/Instrumentation;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/InstrumentationContext;",
-            "line": 145,
+            "line": 154,
             "counters": {
               "line": {
                 "covered": 0,
@@ -93287,7 +93306,7 @@
           {
             "name": "lambda$beginExecuteOperation$0",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationExecuteOperationParameters;Lgraphql/execution/instrumentation/Instrumentation;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/InstrumentationContext;",
-            "line": 140,
+            "line": 149,
             "counters": {
               "line": {
                 "covered": 1,
@@ -93306,7 +93325,7 @@
           {
             "name": "lambda$beginValidation$0",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationValidationParameters;Lgraphql/execution/instrumentation/Instrumentation;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/InstrumentationContext;",
-            "line": 135,
+            "line": 144,
             "counters": {
               "line": {
                 "covered": 1,
@@ -93325,7 +93344,7 @@
           {
             "name": "lambda$beginParse$0",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationExecutionParameters;Lgraphql/execution/instrumentation/Instrumentation;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/InstrumentationContext;",
-            "line": 129,
+            "line": 138,
             "counters": {
               "line": {
                 "covered": 1,
@@ -93344,7 +93363,7 @@
           {
             "name": "lambda$beginExecution$0",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationExecutionParameters;Lgraphql/execution/instrumentation/Instrumentation;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/InstrumentationContext;",
-            "line": 123,
+            "line": 132,
             "counters": {
               "line": {
                 "covered": 1,
@@ -93452,7 +93471,7 @@
           {
             "name": "&lt;init&gt;",
             "desc": "(Lcom/google/common/collect/ImmutableList;)V",
-            "line": 362,
+            "line": 371,
             "counters": {
               "line": {
                 "covered": 3,
@@ -93471,7 +93490,7 @@
           {
             "name": "onDispatched",
             "desc": "()V",
-            "line": 368,
+            "line": 377,
             "counters": {
               "line": {
                 "covered": 2,
@@ -93490,7 +93509,7 @@
           {
             "name": "onCompleted",
             "desc": "(Ljava/util/Map;Ljava/lang/Throwable;)V",
-            "line": 373,
+            "line": 382,
             "counters": {
               "line": {
                 "covered": 2,
@@ -93509,7 +93528,7 @@
           {
             "name": "onFieldValuesInfo",
             "desc": "(Ljava/util/List;)V",
-            "line": 378,
+            "line": 387,
             "counters": {
               "line": {
                 "covered": 2,
@@ -93528,7 +93547,7 @@
           {
             "name": "onFieldValuesException",
             "desc": "()V",
-            "line": 383,
+            "line": 392,
             "counters": {
               "line": {
                 "covered": 0,
@@ -93547,7 +93566,7 @@
           {
             "name": "lambda$onFieldValuesInfo$0",
             "desc": "(Ljava/util/List;Lgraphql/execution/instrumentation/ExecuteObjectInstrumentationContext;)V",
-            "line": 378,
+            "line": 387,
             "counters": {
               "line": {
                 "covered": 1,
@@ -93566,7 +93585,7 @@
           {
             "name": "lambda$onCompleted$0",
             "desc": "(Ljava/util/Map;Ljava/lang/Throwable;Lgraphql/execution/instrumentation/ExecuteObjectInstrumentationContext;)V",
-            "line": 373,
+            "line": 382,
             "counters": {
               "line": {
                 "covered": 1,
@@ -93601,7 +93620,7 @@
           {
             "name": "&lt;init&gt;",
             "desc": "(Lcom/google/common/collect/ImmutableList;)V",
-            "line": 314,
+            "line": 323,
             "counters": {
               "line": {
                 "covered": 3,
@@ -93620,7 +93639,7 @@
           {
             "name": "onDispatched",
             "desc": "()V",
-            "line": 320,
+            "line": 329,
             "counters": {
               "line": {
                 "covered": 2,
@@ -93639,7 +93658,7 @@
           {
             "name": "onCompleted",
             "desc": "(Ljava/lang/Object;Ljava/lang/Throwable;)V",
-            "line": 325,
+            "line": 334,
             "counters": {
               "line": {
                 "covered": 2,
@@ -93658,7 +93677,7 @@
           {
             "name": "lambda$onCompleted$0",
             "desc": "(Ljava/lang/Object;Ljava/lang/Throwable;Lgraphql/execution/instrumentation/InstrumentationContext;)V",
-            "line": 325,
+            "line": 334,
             "counters": {
               "line": {
                 "covered": 1,
@@ -94298,7 +94317,7 @@
           {
             "name": "&lt;init&gt;",
             "desc": "(Lcom/google/common/collect/ImmutableList;)V",
-            "line": 333,
+            "line": 342,
             "counters": {
               "line": {
                 "covered": 3,
@@ -94317,7 +94336,7 @@
           {
             "name": "onDispatched",
             "desc": "()V",
-            "line": 339,
+            "line": 348,
             "counters": {
               "line": {
                 "covered": 2,
@@ -94336,7 +94355,7 @@
           {
             "name": "onCompleted",
             "desc": "(Lgraphql/ExecutionResult;Ljava/lang/Throwable;)V",
-            "line": 344,
+            "line": 353,
             "counters": {
               "line": {
                 "covered": 2,
@@ -94355,7 +94374,7 @@
           {
             "name": "onFieldValuesInfo",
             "desc": "(Ljava/util/List;)V",
-            "line": 349,
+            "line": 358,
             "counters": {
               "line": {
                 "covered": 2,
@@ -94374,7 +94393,7 @@
           {
             "name": "onFieldValuesException",
             "desc": "()V",
-            "line": 354,
+            "line": 363,
             "counters": {
               "line": {
                 "covered": 0,
@@ -94393,7 +94412,7 @@
           {
             "name": "lambda$onFieldValuesInfo$0",
             "desc": "(Ljava/util/List;Lgraphql/execution/instrumentation/ExecutionStrategyInstrumentationContext;)V",
-            "line": 349,
+            "line": 358,
             "counters": {
               "line": {
                 "covered": 1,
@@ -94412,7 +94431,7 @@
           {
             "name": "lambda$onCompleted$0",
             "desc": "(Lgraphql/ExecutionResult;Ljava/lang/Throwable;Lgraphql/execution/instrumentation/ExecutionStrategyInstrumentationContext;)V",
-            "line": 344,
+            "line": 353,
             "counters": {
               "line": {
                 "covered": 1,
@@ -94447,7 +94466,7 @@
           {
             "name": "&lt;init&gt;",
             "desc": "(Lcom/google/common/collect/ImmutableList;)V",
-            "line": 391,
+            "line": 400,
             "counters": {
               "line": {
                 "covered": 3,
@@ -94466,7 +94485,7 @@
           {
             "name": "onDispatched",
             "desc": "()V",
-            "line": 397,
+            "line": 406,
             "counters": {
               "line": {
                 "covered": 2,
@@ -94485,7 +94504,7 @@
           {
             "name": "onFetchedValue",
             "desc": "(Ljava/lang/Object;)V",
-            "line": 402,
+            "line": 411,
             "counters": {
               "line": {
                 "covered": 2,
@@ -94504,7 +94523,7 @@
           {
             "name": "onExceptionHandled",
             "desc": "(Lgraphql/execution/DataFetcherResult;)V",
-            "line": 407,
+            "line": 416,
             "counters": {
               "line": {
                 "covered": 2,
@@ -94523,7 +94542,7 @@
           {
             "name": "onCompleted",
             "desc": "(Ljava/lang/Object;Ljava/lang/Throwable;)V",
-            "line": 412,
+            "line": 421,
             "counters": {
               "line": {
                 "covered": 2,
@@ -94542,7 +94561,7 @@
           {
             "name": "lambda$onCompleted$0",
             "desc": "(Ljava/lang/Object;Ljava/lang/Throwable;Lgraphql/execution/instrumentation/FieldFetchingInstrumentationContext;)V",
-            "line": 412,
+            "line": 421,
             "counters": {
               "line": {
                 "covered": 1,
@@ -94561,7 +94580,7 @@
           {
             "name": "lambda$onExceptionHandled$0",
             "desc": "(Lgraphql/execution/DataFetcherResult;Lgraphql/execution/instrumentation/FieldFetchingInstrumentationContext;)V",
-            "line": 407,
+            "line": 416,
             "counters": {
               "line": {
                 "covered": 1,
@@ -94580,7 +94599,7 @@
           {
             "name": "lambda$onFetchedValue$0",
             "desc": "(Ljava/lang/Object;Lgraphql/execution/instrumentation/FieldFetchingInstrumentationContext;)V",
-            "line": 402,
+            "line": 411,
             "counters": {
               "line": {
                 "covered": 1,
@@ -110563,7 +110582,7 @@
           {
             "name": "&lt;init&gt;",
             "desc": "(I)V",
-            "line": 45,
+            "line": 46,
             "counters": {
               "line": {
                 "covered": 2,
@@ -110582,7 +110601,7 @@
           {
             "name": "&lt;init&gt;",
             "desc": "(ILjava/util/function/Function;)V",
-            "line": 55,
+            "line": 56,
             "counters": {
               "line": {
                 "covered": 2,
@@ -110601,7 +110620,7 @@
           {
             "name": "&lt;init&gt;",
             "desc": "(ILgraphql/analysis/FieldComplexityCalculator;)V",
-            "line": 65,
+            "line": 66,
             "counters": {
               "line": {
                 "covered": 2,
@@ -110620,7 +110639,7 @@
           {
             "name": "&lt;init&gt;",
             "desc": "(ILgraphql/analysis/FieldComplexityCalculator;Ljava/util/function/Function;)V",
-            "line": 76,
+            "line": 77,
             "counters": {
               "line": {
                 "covered": 5,
@@ -110639,7 +110658,7 @@
           {
             "name": "createStateAsync",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationCreateStateParameters;)Ljava/util/concurrent/CompletableFuture;",
-            "line": 84,
+            "line": 85,
             "counters": {
               "line": {
                 "covered": 1,
@@ -110658,7 +110677,7 @@
           {
             "name": "beginValidation",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationValidationParameters;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/InstrumentationContext;",
-            "line": 89,
+            "line": 90,
             "counters": {
               "line": {
                 "covered": 3,
@@ -110677,7 +110696,7 @@
           {
             "name": "beginExecuteOperation",
             "desc": "(Lgraphql/execution/instrumentation/parameters/InstrumentationExecuteOperationParameters;Lgraphql/execution/instrumentation/InstrumentationState;)Lgraphql/execution/instrumentation/InstrumentationContext;",
-            "line": 97,
+            "line": 98,
             "counters": {
               "line": {
                 "covered": 13,
@@ -110696,7 +110715,7 @@
           {
             "name": "newQueryComplexityCalculator",
             "desc": "(Lgraphql/execution/ExecutionContext;)Lgraphql/analysis/QueryComplexityCalculator;",
-            "line": 115,
+            "line": 116,
             "counters": {
               "line": {
                 "covered": 7,
@@ -110715,7 +110734,7 @@
           {
             "name": "mkAbortException",
             "desc": "(II)Lgraphql/execution/AbortExecutionException;",
-            "line": 133,
+            "line": 134,
             "counters": {
               "line": {
                 "covered": 1,
@@ -110734,7 +110753,7 @@
           {
             "name": "lambda$new$2",
             "desc": "(Lgraphql/analysis/QueryComplexityInfo;)Ljava/lang/Boolean;",
-            "line": 65,
+            "line": 66,
             "counters": {
               "line": {
                 "covered": 1,
@@ -110753,7 +110772,7 @@
           {
             "name": "lambda$new$1",
             "desc": "(Lgraphql/analysis/FieldComplexityEnvironment;I)I",
-            "line": 55,
+            "line": 56,
             "counters": {
               "line": {
                 "covered": 1,
@@ -110772,7 +110791,7 @@
           {
             "name": "lambda$new$0",
             "desc": "(Lgraphql/analysis/QueryComplexityInfo;)Ljava/lang/Boolean;",
-            "line": 45,
+            "line": 46,
             "counters": {
               "line": {
                 "covered": 1,
@@ -111444,7 +111463,7 @@
           {
             "name": "&lt;init&gt;",
             "desc": "()V",
-            "line": 136,
+            "line": 137,
             "counters": {
               "line": {
                 "covered": 2,
