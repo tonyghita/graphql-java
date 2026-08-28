@@ -189,7 +189,7 @@ public class TypesImplementInterfaces extends GraphQLTypeVisitorStub {
     boolean isCompatible(GraphQLOutputType constraintType, GraphQLOutputType objectType) {
         if (isSameType(constraintType, objectType)) {
             return true;
-        } else if (constraintType instanceof GraphQLUnionType) {
+        } else if (constraintType instanceof GraphQLUnionType && objectType instanceof GraphQLObjectType) {
             return objectIsMemberOfUnion((GraphQLUnionType) constraintType, objectType);
         } else if (constraintType instanceof GraphQLInterfaceType && objectType instanceof GraphQLObjectType) {
             return objectImplementsInterface((GraphQLInterfaceType) constraintType, (GraphQLObjectType) objectType);

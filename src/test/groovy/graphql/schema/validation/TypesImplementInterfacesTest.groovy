@@ -1,5 +1,6 @@
 package graphql.schema.validation
 
+import graphql.TestUtil
 import graphql.schema.GraphQLInterfaceType
 import graphql.schema.GraphQLObjectType
 import spock.lang.Specification
@@ -311,6 +312,29 @@ class TypesImplementInterfacesTest extends Specification {
         !badErrorCollector.getErrors().isEmpty()
     }
 
+    def "non-null union field implements nullable union interface field"() {
+        when:
+        TestUtil.schema('''
+            schema { query: B }
+
+            union U = A
+
+            interface I {
+                i: U
+            }
+
+            type A {
+                a: String
+            }
+
+            type B implements I {
+                i: U!
+            }
+        ''')
+
+        then:
+        noExceptionThrown()
+    }
 
     def "field is a non null object"() {
         given:
