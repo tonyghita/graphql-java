@@ -189,16 +189,6 @@ public class TypesImplementInterfaces extends GraphQLTypeVisitorStub {
     boolean isCompatible(GraphQLOutputType constraintType, GraphQLOutputType objectType) {
         if (isSameType(constraintType, objectType)) {
             return true;
-        } else if (constraintType instanceof GraphQLUnionType && objectType instanceof GraphQLObjectType) {
-            return objectIsMemberOfUnion((GraphQLUnionType) constraintType, objectType);
-        } else if (constraintType instanceof GraphQLInterfaceType && objectType instanceof GraphQLObjectType) {
-            return objectImplementsInterface((GraphQLInterfaceType) constraintType, (GraphQLObjectType) objectType);
-        } else if (constraintType instanceof GraphQLInterfaceType && objectType instanceof GraphQLInterfaceType) {
-            return interfaceImplementsInterface((GraphQLInterfaceType) constraintType, (GraphQLInterfaceType) objectType);
-        } else if (isList(constraintType) && isList(objectType)) {
-            GraphQLOutputType wrappedConstraintType = (GraphQLOutputType) unwrapOne(constraintType);
-            GraphQLOutputType wrappedObjectType = (GraphQLOutputType) unwrapOne(objectType);
-            return isCompatible(wrappedConstraintType, wrappedObjectType);
         } else if (isNonNull(objectType)) {
             GraphQLOutputType nullableConstraint;
             if (isNonNull(constraintType)) {
@@ -208,6 +198,16 @@ public class TypesImplementInterfaces extends GraphQLTypeVisitorStub {
             }
             GraphQLOutputType nullableObjectType = (GraphQLOutputType) unwrapOne(objectType);
             return isCompatible(nullableConstraint, nullableObjectType);
+        } else if (constraintType instanceof GraphQLUnionType) {
+            return objectIsMemberOfUnion((GraphQLUnionType) constraintType, objectType);
+        } else if (constraintType instanceof GraphQLInterfaceType && objectType instanceof GraphQLObjectType) {
+            return objectImplementsInterface((GraphQLInterfaceType) constraintType, (GraphQLObjectType) objectType);
+        } else if (constraintType instanceof GraphQLInterfaceType && objectType instanceof GraphQLInterfaceType) {
+            return interfaceImplementsInterface((GraphQLInterfaceType) constraintType, (GraphQLInterfaceType) objectType);
+        } else if (isList(constraintType) && isList(objectType)) {
+            GraphQLOutputType wrappedConstraintType = (GraphQLOutputType) unwrapOne(constraintType);
+            GraphQLOutputType wrappedObjectType = (GraphQLOutputType) unwrapOne(objectType);
+            return isCompatible(wrappedConstraintType, wrappedObjectType);
         } else {
             return false;
         }
