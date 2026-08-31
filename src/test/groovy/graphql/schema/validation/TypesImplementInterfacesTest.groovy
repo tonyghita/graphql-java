@@ -4,6 +4,7 @@ import graphql.TestUtil
 import graphql.schema.GraphQLInterfaceType
 import graphql.schema.GraphQLObjectType
 import spock.lang.Specification
+import spock.lang.Unroll
 
 import static SchemaValidationErrorType.ObjectDoesNotImplementItsInterfaces
 import static graphql.Scalars.GraphQLBoolean
@@ -312,28 +313,51 @@ class TypesImplementInterfacesTest extends Specification {
         !badErrorCollector.getErrors().isEmpty()
     }
 
-    def "non-null union field implements nullable union interface field"() {
+    @Unroll
+    def "implementing field can strengthen #kind nullability from #interfaceFieldType to #implementingFieldType"() {
         when:
-        TestUtil.schema('''
+        TestUtil.schema("""
             schema { query: B }
+
+            enum E {
+                VALUE
+            }
+
+            interface J {
+                value: String
+            }
+
+            type A implements J {
+                value: String
+            }
 
             union U = A
 
             interface I {
-                i: U
-            }
-
-            type A {
-                a: String
+                value: $interfaceFieldType
             }
 
             type B implements I {
-                i: U!
+                value: $implementingFieldType
             }
-        ''')
+        """)
 
         then:
         noExceptionThrown()
+
+        where:
+        kind                | interfaceFieldType | implementingFieldType
+        "scalar"            | "String"           | "String!"
+        "enum"              | "E"                | "E!"
+        "object"            | "A"                | "A!"
+        "interface"         | "J"                | "J!"
+        "union"             | "U"                | "U!"
+        "list"              | "[String]"         | "[String]!"
+        "list item"         | "[String]"         | "[String!]"
+        "list and item"     | "[String]"         | "[String!]!"
+        "nested list"       | "[[String]]"       | "[[String!]!]!"
+        "list of unions"    | "[U]"              | "[U!]!"
+        "list of interfaces" | "[J]"              | "[J!]!"
     }
 
     def "field is a non null object"() {
